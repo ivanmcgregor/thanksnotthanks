@@ -6,16 +6,20 @@ $(document).ready(function() {
         click++;
         switch (click) {
             case 1:
-                console.log('clicked 1');
+                $('.porsche').addClass('swipe-left');
+                setTimeout(function () {
+                    $('.map').addClass('map-travel-1');
+                    setTimeout(function () {
+                        $('.minhi').addClass('minhi-active');
+                    }, 220);
+                }, 250);
                 break;
             case 2:
-                console.log('clicked 2');
+                $('.minhi').addClass('swipe-right');
                 break;
             default:
                 console.log('nothing planned to happen.');
         };
     })
     console.log('ready.');
-
-
 });
