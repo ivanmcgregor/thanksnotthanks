@@ -6,16 +6,31 @@ $(document).ready(function() {
         click++;
         switch (click) {
             case 1:
-                $('.porsche').addClass('swipe-left');
+                $('.porsche').addClass('swipe-right');
                 setTimeout(function () {
                     $('.map').addClass('map-travel-1');
                     setTimeout(function () {
-                        $('.minhi').addClass('minhi-active');
+                        $('.minhi').addClass('active');
                     }, 220);
                 }, 250);
                 break;
             case 2:
-                $('.minhi').addClass('swipe-right');
+                $('.minhi').addClass('swipe-left');
+                setTimeout(function () {
+                    $('.map').addClass('map-travel-2');
+                    setTimeout(function () {
+                        $('.delorean').addClass('active');
+                    }, 220);
+                }, 250);
+                break;
+            case 3:
+                $('.delorean').addClass('swipe-right');
+                setTimeout(function () {
+                    $('.map').addClass('map-travel-3');
+                    setTimeout(function () {
+                        $('.final').addClass('active');
+                    }, 220);
+                }, 250);
                 break;
             default:
                 console.log('nothing planned to happen.');
