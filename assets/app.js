@@ -10,12 +10,12 @@ $(document).ready(function() {
                 setTimeout(function () {
                     $('.map').addClass('map-travel-1');
                     setTimeout(function () {
-                        $('.minhi').addClass('active');
+                        $('.mini').addClass('active');
                     }, 220);
                 }, 250);
                 break;
             case 2:
-                $('.minhi').addClass('swipe-left');
+                $('.mini').addClass('swipe-left');
                 setTimeout(function () {
                     $('.map').addClass('map-travel-2');
                     setTimeout(function () {

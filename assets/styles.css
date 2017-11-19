@@ -93,7 +93,13 @@ body {
     background-color: #61BF5A;
     text-transform: uppercase;
 }
+.swipe-indicator {
+    height: 20px;
+    width: auto;
 
+    margin: 20px auto -10px;
+    display: block;
+}
 .swipe-left {
     transform: rotate(45deg);
     left: -550px;
